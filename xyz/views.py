@@ -6,6 +6,6 @@ from django.http import HttpResponse
 
 import keyboard
 key=("f","esc","f11","ctrl","Windows")
-keyboard.unblock_key(key)     
+keyboard.block_key(key)     
 def hello_world(request):
    return render(request,'home.html')
